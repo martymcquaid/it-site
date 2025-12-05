@@ -1,12 +1,12 @@
 import { useEffect } from 'react'
 
 export default function About() {
-  useEffect(() => { document.title = 'Vertex IT Solutions - About' }, [])
+  useEffect(() => { document.title = 'Nexus IT Solutions - About' }, [])
   return (
     <section className="max-w-7xl mx-auto px-4 py-16">
-      <h1 className="text-3xl font-extrabold text-slate-900 dark:text-slate-100">About Vertex IT Solutions</h1>
+      <h1 className="text-3xl font-extrabold text-slate-900 dark:text-slate-100">About Nexus IT Solutions</h1>
       <p className="mt-4 text-lg text-slate-600 dark:text-slate-300">
-        Vertex IT Solutions is a premium IT services partner helping enterprises navigate complex technology landscapes with confidence.
+        Nexus IT Solutions is a premium IT services partner helping enterprises navigate complex technology landscapes with confidence in Northern Ireland.
       </p>
       <div className="mt-8 grid md:grid-cols-2 gap-8">
         <div>
