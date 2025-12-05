@@ -1,13 +1,11 @@
 import { Link } from 'react-router-dom'
 import Testimonials from '../components/Testimonials'
 
-import heroImg from '../assets/hero.jpg'
-
 export default function Home() {
   return (
     <section className="min-h-screen">
       <div className="relative h-96 md:h-[520px] bg-gradient-to-br from-sky-800 to-indigo-900 text-white overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f9f24?auto=format&fit=crop&w=1400&q=80" alt="Tech planning" className="absolute inset-0 w-full h-full object-cover mix-blend-soft-light" style={{opacity:0.5}} />
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f9f24?auto=format&fit=crop&w=1400&q=80" alt="Tech planning" className="absolute inset-0 w-full h-full object-cover opacity-50" />
         <div className="relative z-10 container mx-auto px-6 h-full flex flex-col md:flex-row items-center">
           <div className="flex-1 py-12 md:py-0 md:pr-6">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Nexus IT Solutions — Premium IT Services for Northern Ireland</h1>
