@@ -1,4 +1,4 @@
-import React from 'react'
+export {} // ensure TS module scope
 
 type Testimonial = {
   name: string
