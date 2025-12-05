@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+// Navbar links use react-router-dom Link in the layout, see /src/components/Layout.tsx
 
 export default function Home() {
   return (
