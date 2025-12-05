@@ -90,13 +90,11 @@ function Footer() {
   )
 }
 
-function Layout() {
+function Layout({ children }: { children?: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
       <Navbar />
-      <main>
-        <Outlet />
-      </main>
+      <main>{children}</main>
       <Footer />
       <CookieBanner />
       <LiveChatWidget />
@@ -123,12 +121,10 @@ function CookieBanner() {
 }
 
 function LiveChatWidget() {
-  // Simple placeholder widget
   return (
-    <div className="fixed bottom-4 left-4 bg-emerald-500 text-white px-4 py-2 rounded-full shadow-lg" aria-label="Live chat placeholder" style={{cursor:'pointer'}}>
-      💬 Chat
-    </div>
+    <div className="fixed bottom-4 left-4 bg-emerald-500 text-white px-4 py-2 rounded-full shadow-lg" aria-label="Live chat placeholder" style={{cursor:'pointer'}}>💬 Chat</div>
   )
 }
 
-export { Layout, Navbar, Footer }
+export default Layout
+export { Navbar, Footer }
