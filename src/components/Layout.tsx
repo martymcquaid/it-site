@@ -35,9 +35,11 @@ function ThemeToggle() {
 }
 
 function Navbar() {
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const toggleMobile = () => setMobileOpen(v => !v)
   return (
     <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-sm dark:bg-slate-900/90">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center space-x-3">
           <span className="text-xl font-extrabold tracking-tight text-indigo-600">Nexus IT Solutions</span>
           <span className="text-sm text-slate-500 hidden md:inline-block">• Northern Ireland</span>
@@ -48,9 +50,19 @@ function Navbar() {
           ))}
         </nav>
         <div className="flex items-center space-x-2">
+          <button className="md:hidden p-2 rounded-md" onClick={toggleMobile} aria-label="Open menu">☰</button>
           <ThemeToggle />
         </div>
       </div>
+      {mobileOpen && (
+        <div className="md:hidden bg-white/90 backdrop-blur-md shadow-sm">
+          <div className="px-4 py-2 flex flex-col space-y-1">
+            {NAV_ITEMS.map(n => (
+              <Link key={n.to} to={n.to} className="p-2 text-sm text-slate-700 hover:text-indigo-600">{n.label}</Link>
+            ))}
+          </div>
+        </div>
+      )}
     </header>
   )
 }
