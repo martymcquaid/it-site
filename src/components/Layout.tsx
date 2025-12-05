@@ -39,7 +39,8 @@ function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-sm dark:bg-slate-900/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center space-x-3">
-          <span className="text-xl font-extrabold tracking-tight text-indigo-600">Vertex IT Solutions</span>
+          <span className="text-xl font-extrabold tracking-tight text-indigo-600">Nexus IT Solutions</span>
+          <span className="text-sm text-slate-500 hidden md:inline-block">• Northern Ireland</span>
         </div>
         <nav className="hidden md:flex space-x-6">
           {NAV_ITEMS.map((n) => (
@@ -59,8 +60,8 @@ function Footer() {
     <footer className="bg-slate-900 text-slate-100 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-4 gap-8">
         <div>
-          <div className="font-bold text-lg mb-2">Vertex IT Solutions</div>
-          <p className="text-sm text-slate-300">Premium IT services for modern enterprises. Trusted, secure, scalable.</p>
+          <div className="font-bold text-lg mb-2">Nexus IT Solutions</div>
+          <p className="text-sm text-slate-300">Premium IT services for modern enterprises in Northern Ireland. Trusted, secure, scalable.</p>
         </div>
         <div>
           <div className="font-semibold mb-2">Services</div>
@@ -82,8 +83,8 @@ function Footer() {
         </div>
         <div>
           <div className="font-semibold mb-2">Contact</div>
-          <div className="text-sm text-slate-300">hello@vertexit.example</div>
-          <div className="text-sm text-slate-300 mt-1">+1 (555) 012-3456</div>
+          <div className="text-sm text-slate-300">hello@nexus-ni.example</div>
+          <div className="text-sm text-slate-300 mt-1">+44 28 1234 5678</div>
         </div>
       </div>
     </footer>
@@ -127,3 +128,4 @@ function LiveChatWidget() {
 }
 
 export default Layout
+export { Navbar, Footer }
