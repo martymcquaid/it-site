@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Layout } from '../src/components/Layout'
+import React from 'react'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Layout from './components/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
@@ -24,6 +25,7 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Layout>
     </BrowserRouter>
