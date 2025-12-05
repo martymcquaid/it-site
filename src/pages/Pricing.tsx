@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 export default function Pricing() {
-  useEffect(() => { document.title = 'Vertex IT Solutions - Pricing' }, [])
+  useEffect(() => { document.title = 'Nexus IT Solutions - Pricing' }, [])
   const tiers = [
     { id:'basic', name:'Basic', price:0, features:['Email support','Core security','1 site','Community access'] },
     { id:'standard', name:'Standard', price:49, features:['Phone support','Advanced security','5 sites','Cloud backup'] },
