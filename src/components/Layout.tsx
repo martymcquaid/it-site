@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 type NavItem = { to: string; label: string }
 
@@ -127,4 +127,3 @@ function LiveChatWidget() {
 }
 
 export default Layout
-export { Navbar, Footer }
