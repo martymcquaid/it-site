@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 export default function About() {
   useEffect(() => { document.title = 'Vertex IT Solutions - About' }, [])
